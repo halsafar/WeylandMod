@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net45</TargetFramework>
+        <TargetFramework>net452</TargetFramework>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
@@ -10,7 +10,7 @@
             <HintPath>..\Dependencies\Valheim\assembly_valheim.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="BepInEx, Version=5.4.15.0, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="BepInEx, Version=5.4.21.0, Culture=neutral, PublicKeyToken=null">
             <HintPath>..\Dependencies\BepInEx\BepInEx.dll</HintPath>
             <Private>False</Private>
         </Reference>
@@ -22,7 +22,7 @@
             <HintPath>..\Dependencies\BepInEx\Mono.Cecil.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="MonoMod.Utils, Version=21.8.5.1, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="MonoMod.Utils, Version=22.1.29.1, Culture=neutral, PublicKeyToken=null">
             <HintPath>..\Dependencies\BepInEx\MonoMod.Utils.dll</HintPath>
             <Private>False</Private>
         </Reference>
@@ -41,11 +41,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\WeylandMod.Core\WeylandMod.Core.csproj"/>
+        <ProjectReference Include="..\WeylandMod.Core\WeylandMod.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="WeylandMod.PreciseRotation.manifest.json"/>
+        <None Remove="WeylandMod.PreciseRotation.manifest.json" />
         <Content Include="WeylandMod.PreciseRotation.manifest.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>

@@ -49,7 +49,7 @@ namespace WeylandMod.SharedMap
             IL.Minimap.UpdatePins += UpdatePinsPatch;
 
             On.Game.SpawnPlayer += SpawnPlayerHook;
-            On.World.SaveWorldMetaData += SaveWorldMetaDataHook;
+            On.World.SaveWorldMetaData_DateTime += SaveWorldMetaDataHook;
             On.Minimap.AddPin += AddPinHook;
             On.Minimap.RemovePin_PinData += RemovePinDataHook;
             On.Minimap.RemovePin_Vector3_float += RemovePinRadiusHook;
@@ -68,7 +68,7 @@ namespace WeylandMod.SharedMap
             IL.Minimap.UpdatePins -= UpdatePinsPatch;
 
             On.Game.SpawnPlayer -= SpawnPlayerHook;
-            On.World.SaveWorldMetaData -= SaveWorldMetaDataHook;
+            On.World.SaveWorldMetaData_DateTime -= SaveWorldMetaDataHook;
             On.Minimap.AddPin -= AddPinHook;
             On.Minimap.RemovePin_PinData -= RemovePinDataHook;
             On.Minimap.RemovePin_Vector3_float -= RemovePinRadiusHook;
@@ -142,9 +142,9 @@ namespace WeylandMod.SharedMap
             return player;
         }
 
-        private void SaveWorldMetaDataHook(On.World.orig_SaveWorldMetaData orig, World self)
+        private void SaveWorldMetaDataHook(On.World.orig_SaveWorldMetaData_DateTime orig, World self, DateTime backupTimestamp)
         {
-            orig(self);
+            orig(self, DateTime.Now);
 
             _logger.LogDebug("SaveSharedMap");
             self.SaveSharedMap();

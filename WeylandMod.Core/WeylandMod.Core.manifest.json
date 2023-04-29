@@ -1,7 +1,7 @@
 {
   "name": "WeylandMod_Core",
   "description": "Core package for all WeylandMod features.",
-  "version_number": "1.6.0",
+  "version_number": "1.6.1",
   "website_url": "https://github.com/WeylandMod/WeylandMod",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.1501",

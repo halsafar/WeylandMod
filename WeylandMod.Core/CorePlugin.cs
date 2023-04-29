@@ -9,7 +9,7 @@ using MonoMod.Cil;
 
 namespace WeylandMod.Core
 {
-    [BepInPlugin("WeylandMod.Core", "WeylandMod.Core", "1.6.0")]
+    [BepInPlugin("WeylandMod.Core", "WeylandMod.Core", "1.6.1")]
     internal class CorePlugin : BaseUnityPlugin
     {
         private readonly IDictionary<string, IFeature> _features = new Dictionary<string, IFeature>();
@@ -68,9 +68,9 @@ namespace WeylandMod.Core
             feature.OnRegister();
         }
 
-        private string GetVersionStringHook(On.Version.orig_GetVersionString orig)
+        private string GetVersionStringHook(On.Version.orig_GetVersionString orig, bool includeMercurialHash)
         {
-            return $"{orig()}/WeylandMod-{Info.Metadata.Version}";
+            return $"{orig(false)}/WeylandMod-{Info.Metadata.Version}";
         }
 
         private void AwakeHook(On.ZNet.orig_Awake orig, ZNet self)

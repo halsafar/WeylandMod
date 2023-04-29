@@ -39,7 +39,11 @@ namespace WeylandMod.SharedMap
             Minimap.instance.SetSharedMap(isSharedPinsEnabled, sharedMapPackage);
         }
 
-        private static string GetSharedMapPath(this World self) =>
-            $"{self.m_worldSavePath}/{self.m_name}.WeylandMod.SharedMap.dat";
+        private static string GetSharedMapPath(this World self)
+        {
+            var worldSavePath = World.GetWorldSavePath();
+            return $"{worldSavePath}/{self.m_name}.WeylandMod.SharedMap.dat";
+        }
+
     }
 }

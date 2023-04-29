@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.Core", "WeylandMod.Core\WeylandMod.Core.csproj", "{DD3E1CBA-2924-4905-B45E-59BE1712979E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.Core", "WeylandMod.Core\WeylandMod.Core.csproj", "{DD3E1CBA-2924-4905-B45E-59BE1712979E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.ExtendedStorage", "WeylandMod.ExtendedStorage\WeylandMod.ExtendedStorage.csproj", "{800910AA-C070-4946-AA23-C37146CB9153}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.ExtendedStorage", "WeylandMod.ExtendedStorage\WeylandMod.ExtendedStorage.csproj", "{800910AA-C070-4946-AA23-C37146CB9153}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.ExtendedDeathPins", "WeylandMod.ExtendedDeathPins\WeylandMod.ExtendedDeathPins.csproj", "{B22C2812-FB4C-4BDD-9FFB-4928C90AA8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.ExtendedDeathPins", "WeylandMod.ExtendedDeathPins\WeylandMod.ExtendedDeathPins.csproj", "{B22C2812-FB4C-4BDD-9FFB-4928C90AA8E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.PreciseRotation", "WeylandMod.PreciseRotation\WeylandMod.PreciseRotation.csproj", "{B67C3EE9-1D9C-40D5-9F3E-73206944B67F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.PreciseRotation", "WeylandMod.PreciseRotation\WeylandMod.PreciseRotation.csproj", "{B67C3EE9-1D9C-40D5-9F3E-73206944B67F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.ExtendedServerPassword", "WeylandMod.ExtendedServerPassword\WeylandMod.ExtendedServerPassword.csproj", "{078D7D02-68D0-4A21-AFD1-5F520756AED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.ExtendedServerPassword", "WeylandMod.ExtendedServerPassword\WeylandMod.ExtendedServerPassword.csproj", "{078D7D02-68D0-4A21-AFD1-5F520756AED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.ItemRadar", "WeylandMod.ItemRadar\WeylandMod.ItemRadar.csproj", "{5B85CDF0-D734-4FC5-8EA9-B2026034CBE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.ItemRadar", "WeylandMod.ItemRadar\WeylandMod.ItemRadar.csproj", "{5B85CDF0-D734-4FC5-8EA9-B2026034CBE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.SharedMap", "WeylandMod.SharedMap\WeylandMod.SharedMap.csproj", "{E71CB286-1AD4-4761-8202-84CC0B3B1075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.SharedMap", "WeylandMod.SharedMap\WeylandMod.SharedMap.csproj", "{E71CB286-1AD4-4761-8202-84CC0B3B1075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeylandMod.FavoriteServers", "WeylandMod.FavoriteServers\WeylandMod.FavoriteServers.csproj", "{DE627C92-2002-47D7-8F2A-8116643F1AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeylandMod.FavoriteServers", "WeylandMod.FavoriteServers\WeylandMod.FavoriteServers.csproj", "{DE627C92-2002-47D7-8F2A-8116643F1AA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DD3E1CBA-2924-4905-B45E-59BE1712979E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -128,5 +125,11 @@ Global
 		{DE627C92-2002-47D7-8F2A-8116643F1AA5}.Release|x64.Build.0 = Release|Any CPU
 		{DE627C92-2002-47D7-8F2A-8116643F1AA5}.Release|x86.ActiveCfg = Release|Any CPU
 		{DE627C92-2002-47D7-8F2A-8116643F1AA5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC4634FD-F63E-40F8-B5D5-45189A649CF0}
 	EndGlobalSection
 EndGlobal
